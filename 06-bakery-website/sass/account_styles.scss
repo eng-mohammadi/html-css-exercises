@@ -1,0 +1,181 @@
+@import "generals";
+@import "layouts";
+@import "components";
+
+// Header
+.head {
+  width: 100%;
+  .head-container {
+    width: 90%;
+    background-color: #eae1e1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    border-bottom: 3px solid #ee1111;
+    ul {
+      li {
+        a {
+          @extend %a-style;
+          i {
+            &:hover {
+              background-color: $font-color;
+              color: $light-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//End Header
+
+//Navbar
+.nav-menu {
+  width: 100%;
+  .navbar {
+    width: 90%;
+    ul {
+      li {
+        a {
+          @extend %a-style;
+          &:hover {
+            color: $light-blue;
+            border-bottom: 2px solid $dark-color;
+            padding-bottom: 5px;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+}
+//End Navbar
+
+// Main Body
+// Login-Registry
+.account {
+  width: 100%;
+  .account-container {
+    width: 90%;
+    margin: 0 auto;
+    .box-account {
+      background-image: url("../images/background_images/background_image.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      .login-tab,
+      .register-tab {
+        display: none;
+      }
+      .tab {
+        color: $tab-color;
+        display: inline-block;
+        margin: 0 50px 50px 0;
+      }
+      .form {
+        position: relative;
+        .login-form,
+        .register-form {
+          .group-form {
+            .label {
+              display: inline-block;
+              margin-bottom: 10px;
+              color: #e2fe0f;
+            }
+            .check-icon {
+              display: inline-block;
+              background-color: gray;
+              width: 15px;
+              height: 15px;
+              border-radius: 3px;
+            }
+            #Remember-check {
+              display: none;
+            }
+            #Remember-check:checked + .label .check-icon {
+              background-color: $check-color;
+            }
+            #Remember-check:checked + .label {
+              color: $check-color;
+            }
+          }
+          .forget-password {
+            margin-top: 50px;
+            text-align: center;
+            a {
+              text-decoration: none;
+              color: #5ddc74;
+            }
+          }
+        }
+        .login-form,
+        .register-form {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          transform: rotateY(180deg);
+          backface-visibility: hidden;
+          transition: all 1s linear;
+          .account-button {
+            margin-top: 40px;
+            &:hover {
+              background-color: invert(rgba(19, 36, 220, 0.6));
+              color: #fff;
+            }
+          }
+        }
+      }
+      .login-tab:checked + {
+        .tab + {
+          .register-tab + {
+            .tab + {
+              .form {
+                .login-form {
+                  transform: rotate(0);
+                }
+              }
+            }
+          }
+        }
+      }
+      .register-tab:checked + {
+        .tab + {
+          .form {
+            .register-form {
+              transform: rotate(0);
+            }
+          }
+        }
+      }
+      .login-tab:checked + .tab,
+      .register-tab:checked + .tab {
+        color: #fff;
+        border-bottom: 3px solid $check-color;
+        padding-bottom: 5px;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+// End Login-Registry
+// End Main Body
+
+// footer
+.footer {
+  width: 100%;
+  .footer-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: $light-blue;
+    .address {
+      text-align: center;
+      .fa-map-marker {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+// End footer

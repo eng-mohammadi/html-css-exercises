@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="این سایت برای دریافت اطلاعات کاربران جهت ورود یا ثبت نام در سایت می باشد."
+    />
+    <meta
+      name="keywords"
+      content="html, webpage, website, account, registry, signin, اطلاعات کاربری، حساب کاربری، ورود، ثبت نام"
+    />
+    <meta name="author" content="Reza Mohammadi" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" href="./images/favicons/favicon.1.png" sizes="16x16" />
+    <link rel="icon" href="./images/favicons/favicon.2.png" sizes="32x32" />
+    <link rel="icon" href="./images/favicons/favicon.3.png" sizes="48x48" />
+    <link rel="icon" href="./images/favicons/favicon.4.png" sizes="64x64" />
+    <link rel="stylesheet" href="./css/account_styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>حساب کاربری</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="head">
+      <section class="head-container">
+        <span>قنادی محمدی</span>
+        <ul>
+          <li>
+            <a href="#"><i class="fa fa-phone"></i>9844-65894752+</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-telegram"></i>Sweet-Mohammadi@</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-instagram"></i>sweet.mohdi_</a>
+          </li>
+        </ul>
+      </section>
+    </header>
+    <!-- End Header -->
+    <!-- Navbar -->
+    <nav class="nav-menu">
+      <section class="navbar">
+        <ul>
+          <li><a href="./index.html">خانه</a></li>
+          <li><a href="#">دستور پخت</a></li>
+          <li><a href="#">ویدیوهای آموزشی</a></li>
+          <li><a href="#">تماس با ما</a></li>
+        </ul>
+      </section>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Main Body -->
+    <main role="main">
+      <!-- Login-Registry -->
+      <section class="account">
+        <section class="account-container">
+          <section class="box-account">
+            <input
+              type="radio"
+              id="Login"
+              name="tab1"
+              class="login-tab"
+              checked
+            />
+            <label for="Login" class="tab">ورود</label>
+            <input
+              type="radio"
+              id="Register"
+              name="tab1"
+              class="register-tab"
+            />
+            <label for="Register" class="tab">ثبت نام</label>
+            <section class="form">
+              <section class="login-form">
+                <form action="#" method="post">
+                  <div class="group-form">
+                    <label for="Username" class="label">نام کاربری</label>
+                    <input
+                      type="text"
+                      id="Username"
+                      name="Username"
+                      maxlength="15"
+                      required
+                      autocomplete="off"
+                      placeholder="نام کاربری خود را وارد کنید"
+                      class="account-input"
+                    />
+                  </div>
+                  <div class="group-form">
+                    <label for="Email" class="label">ایمیل</label>
+                    <input
+                      type="email"
+                      id="Email"
+                      name="Email"
+                      required
+                      autocomplete="off"
+                      placeholder="ایمیل خود را وارد کنید"
+                      class="account-input"
+                    />
+                  </div>
+                  <div class="group-form">
+                    <label for="Password" class="label">رمز ورود</label>
+                    <input
+                      type="password"
+                      id="Password"
+                      name="Password"
+                      required
+                      placeholder="رمز ورود خود را وارد کنید"
+                      autocomplete="off"
+                      class="account-input"
+                    />
+                  </div>
+                  <div class="group-form">
+                    <input
+                      type="checkbox"
+                      id="Remember-check"
+                      name="Remember-check"
+                    />
+                    <label for="Remember-check" class="label"
+                      ><span class="check-icon"></span> مرا به خاطر بسپار</label
+                    >
+                  </div>
+                  <div class="group-form">
+                    <input type="submit" value="ورود" class="account-button" />
+                  </div>
+                </form>
+                <div class="forget-password">
+                  <a href="#">رمز عبور را فراموش کردم</a>
+                </div>
+              </section>
+              <section class="register-form">
+                <form action="#" method="post">
+                  <div class="group-form">
+                    <label for="Signup-username" class="label"
+                      >نام کاربری</label
+                    >
+                    <input
+                      type="text"
+                      id="Signup-username"
+                      name="Signup-username"
+                      maxlength="15"
+                      required
+                      autocomplete="off"
+                      placeholder="نام کاربری خود را وارد کنید"
+                      class="account-input"
+                    />
+                  </div>
+                  <div class="group-form">
+                    <label for="Signup-email" class="label">ایمیل</label>
+                    <input
+                      type="email"
+                      id="Signup-email"
+                      name="Signup-email"
+                      required
+                      autocomplete="off"
+                      placeholder="ایمیل خود را وارد کنید"
+                      class="account-input"
+                    />
+                  </div>
+                  <div class="group-form">
+                    <label for="Signup-password" class="label">رمز ورود</label>
+                    <input
+                      type="password"
+                      id="Signup-password"
+                      name="Signup-password"
+                      required
+                      placeholder="رمز ورود خود را وارد کنید"
+                      autocomplete="off"
+                      class="account-input"
+                    />
+                  </div>
+                  <div class="group-form">
+                    <label for="Confirm-password" class="label"
+                      >تایید رمز ورود</label
+                    >
+                    <input
+                      type="password"
+                      id="Confirm-password"
+                      name="Confirm-password"
+                      required
+                      placeholder="رمز عبور خود را تایید کنید"
+                      autocomplete="off"
+                      class="account-input"
+                    />
+                  </div>
+                  <div class="group-form">
+                    <input
+                      type="submit"
+                      value="ثبت نام"
+                      class="account-button"
+                    />
+                  </div>
+                </form>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+      <!-- End Login-Registry -->
+    </main>
+    <!-- End Main Body -->
+    <!-- Footer -->
+    <footer class="footer">
+      <section class="footer-container">
+        <div class="address">
+          <p>
+            <i class="fa fa-map-marker"></i>آدرس: ارومیه - خیابان بهداری - پلاک
+            68
+          </p>
+        </div>
+      </section>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>

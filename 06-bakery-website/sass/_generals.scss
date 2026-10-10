@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "IRANSansWeb";
+  src: url("../fonts/IRANSansWeb.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/IRANSansWeb.ttf") format("truetype"),
+    url("../fonts/IRANSansWeb.woff") format("woff"),
+    url("../fonts/IRANSansWeb.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "IRANSansWeb_Medium";
+  src: url("../fonts/IRANSansWeb.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/IRANSansWeb.ttf") format("truetype"),
+    url("../fonts/IRANSansWeb.woff") format("woff"),
+    url("../fonts/IRANSansWeb.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  font-family: "IRANSansWeb";
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d5e9ea;
+}
+
+$small-padding: 8px;
+$medium-padding: 10px;
+$large-padding: 15px;
+$border-radius__medium: 10px;
+$border-radius__large: 15px;
+$font-size__min--small: 0.6rem;
+$font-size__small: 0.8rem;
+$font-size__medium: 1rem;
+$font-size__large: 1.1rem;
+$font-size__medium--large: 1.4rem;
+$font-size__very--large: 2.8rem;
+$font-color: #fff;
+$dark-color: #100c0c;
+$bg-color: #a1a603;
+$light-blue: #1496e1;
+$back-color: rgba(19, 36, 220, 0.3);
+$tab-color: #3eeb43;
+$check-color: #2988e1;

@@ -1,0 +1,150 @@
+@import "generals";
+@import "layouts";
+@import "components";
+
+// Header
+.head {
+  width: 100%;
+  .head-container {
+    width: 90%;
+    background-color: #eae1e1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    border-bottom: 3px solid #ee1111;
+    ul {
+      li {
+        a {
+          @extend %a-style;
+          i {
+            &:hover {
+              background-color: $font-color;
+              color: $light-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//End Header
+
+//Navbar
+.nav-menu {
+  width: 100%;
+  .navbar {
+    width: 90%;
+    ul {
+      li {
+        a {
+          @extend %a-style;
+          &:hover {
+            color: $light-blue;
+            border-bottom: 2px solid $dark-color;
+            padding-bottom: 5px;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+}
+//End Navbar
+
+// Main Body
+// Introduction Products
+.introduction {
+  width: 100%;
+  .introduction-container {
+    width: 90%;
+    margin: 0 auto;
+    border: 3px solid $bg-color;
+    .product {
+      .product-img {
+        text-align: center;
+        img {
+          border: 1px solid #000;
+        }
+      }
+      .product-info {
+        .sale-button {
+          &:hover {
+            background-color: invert(#1496e1);
+            color: invert(#fff);
+          }
+        }
+      }
+      h1 {
+        display: inline-block;
+        border: 3px solid #fff;
+        background-color: $bg-color;
+      }
+      .other-product {
+        .other-product__img {
+          position: relative;
+          border: 2px solid #ccc;
+          background-color: $back-color;
+          text-align: center;
+          .other-product__link {
+            visibility: hidden;
+            .fa-link {
+              &::after {
+                visibility: visible;
+                position: absolute;
+                content: "";
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                cursor: pointer;
+                z-index: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// End Introduction Products
+// End Main Body
+
+// Footer
+.footer {
+  width: 100%;
+  .footer-container {
+    width: 90%;
+    margin: 0 auto;
+    border: 3px solid #000;
+    background-color: #fff;
+    .product-end-footer {
+      background-image: url("../images/background_images/background_image.1.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow: 20px 20px 25px invert(#d5e9ea);
+      .address {
+        text-align: center;
+        background-color: rgba(107, 232, 199, 0.5);
+        p {
+          i {
+            margin: 20px 10px;
+          }
+        }
+      }
+      .form-box {
+        .form-control {
+          margin: 10px 0;
+          text-align: center;
+          .main-button {
+            &:hover {
+              background-color: invert(#83bbed);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// End Footer
