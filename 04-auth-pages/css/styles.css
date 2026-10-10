@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "IRANSans";
+  src:
+    url("../fonts/IRANSansWeb.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/IRANSansWeb.ttf") format("truetype"),
+    url("../fonts/IRANSansWeb.woff") format("woff"),
+    url("../fonts/IRANSansWeb.woff2") format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "IRANSansWeb_Medium";
+  src:
+    url("../fonts/IRANSansWeb_Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/IRANSansWeb_Medium.ttf") format("truetype"),
+    url("../fonts/IRANSansWeb_Medium.woff") format("woff"),
+    url("../fonts/IRANSansWeb_Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+
+body {
+  margin: 0;
+  background-color: #dce2ea;
+  direction: rtl;
+  font-family: "IRANSans";
+}
+
+.body-recovery {
+  margin: 0;
+  background-color: #eae7ee;
+  direction: rtl;
+  font-family: "IRANSansWeb_Medium";
+}
+
+.body-registry {
+  margin: 0;
+  background-color: #eae7ee;
+  direction: rtl;
+  font-family: "IRANSans";
+}
+
+.body-rules {
+  margin: 0;
+  background-color: #e7dcf4;
+  direction: rtl;
+  font-family: "IRANSansWeb_Medium";
+}
+
+h1 {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.div-rules h1 {
+  color: #17ab6b;
+}
+
+legend {
+  color: rgb(45, 83, 83);
+  font-weight: bolder;
+}
+
+.legend-registry {
+  color: rgb(62, 9, 208);
+  font-weight: bolder;
+}
+
+.field-set__legend {
+  border-width: 3px;
+  border-color: #50514f;
+  background-color: #9f90b92a;
+  width: 300px;
+  min-height: 420px;
+  margin: 0 auto;
+}
+
+.fieldset__legend-recovery {
+  border-width: 3px;
+  border-color: #50514f;
+  background-color: #9f90b92a;
+  width: 400px;
+  min-height: 150px;
+  margin: 200px auto;
+}
+
+.fieldset__legend-registry {
+  border-width: 3px;
+  border-color: #50514f;
+  background-color: #9f90b92a;
+  width: 350px;
+  min-height: 800px;
+  margin: 20px auto;
+}
+
+.div-form form,
+.div-form__registry form {
+  display: flex;
+  padding: 10px 20px;
+  flex-direction: column;
+}
+
+.div-form__footer label {
+  display: block;
+}
+
+label {
+  margin: 10px;
+}
+
+input[type="submit"] {
+  width: 100px;
+  height: 30px;
+  margin: 35px auto;
+  border-radius: 5px;
+  background-color: #7721e0;
+  color: #fff;
+  font-size: 16px;
+}
+
+input:not([type="submit"]) {
+  border: 2px solid #ccc;
+  padding: 5px;
+}
+
+input:not([type="submit"]):invalid {
+  border-color: red;
+  outline: none;
+}
+
+input:not([type="submit"]):valid {
+  border-color: blue;
+  outline: none;
+}
+
+input:not([type="submit"]) {
+  border: 2px solid #ccc;
+  padding: 5px;
+}
+
+input:not([type="submit"]):invalid {
+  border-color: red;
+}
+
+input:not([type="submit"]):valid {
+  border-color: blue;
+}
+
+.div-form__footer {
+  margin-top: -12px;
+}
+
+.div-form__footer a {
+  text-decoration: none;
+  color: #17ab6b;
+}
+
+.div-form__footer a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.div-footer p {
+  display: inline;
+  margin-bottom: 0;
+}
+
+.div-rules p {
+  text-align: justify;
+  padding: 15px;
+}
+
+.div-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.div-link a {
+  text-decoration: none;
+  color: #07375a;
+}
+
+.div-link a:hover {
+  color: red;
+}
+
+.div-footer a:link {
+  text-decoration: none;
+}
+
+.div-footer a:hover {
+  color: rgb(31, 138, 21);
+  border: 1px solid #000;
+  background-color: #fff;
+}
+
+::selection {
+  background-color: #d61da8;
+  color: #fff;
+}
