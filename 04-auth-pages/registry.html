@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="این سایت اطلاعات کاربری را برای ثبت نام دریافت کرده و به سمت سرور ارسال می کند."
+    />
+    <meta name="keywords" content="اطلاعات کاربری، ثبت نام، ارسال اطلاعات" />
+    <meta name="author" content="Reza mohammadi" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" href="./images/registry.1.png" sizes="16x16" />
+    <link rel="icon" href="./images/registry.2.png" sizes="32x32" />
+    <link rel="icon" href="./images/registry.3.png" sizes="48x48" />
+    <link rel="icon" href="./images/registry.4.png" sizes="64x64" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>ثبت نام جدید</title>
+  </head>
+  <body class="body-registry">
+    <fieldset class="fieldset__legend-registry">
+      <legend class="legend-registry">فرم ثبت نام</legend>
+      <div class="div-form__registry">
+        <form action="./server.html" method="post">
+          <label for="FirstName">نام</label>
+          <input
+            type="text"
+            id="FirstName"
+            name="FirstName"
+            placeholder="نام را وارد کنید"
+            required
+            maxlength="7"
+            size="30"
+            autocomplete="off"
+          />
+          <label for="LastName">نام خانوادگی</label>
+          <input
+            type="text"
+            id="LastName"
+            name="LastName"
+            required
+            placeholder="نام خانوادگی را وارد کنید"
+            maxlength="15"
+            size="30"
+            autocomplete="off"
+          />
+          <label for="Email">ایمیل</label>
+          <input
+            type="email"
+            id="Email"
+            name="Email"
+            required
+            placeholder="ایمیل خود را وارد کنید"
+            size="30"
+            autocomplete="off"
+          />
+          <label for="PhoneNumber">شماره تماس</label>
+          <input
+            type="number"
+            id="PhoneNumber"
+            name="PhoneNumber"
+            required
+            placeholder="شماره تماس خود را وارد کنید"
+            min="0"
+            max="9"
+            autocomplete="off"
+          />
+          <label for="Address">آدرس</label>
+          <textarea
+            id="Address"
+            name="Address"
+            required
+            placeholder="آدرس خود را وارد کنید"
+            rows="3"
+            cols="10"
+            autocomplete="off"
+          ></textarea>
+          <label for="Password">رمز عبور</label>
+          <input
+            type="password"
+            id="Password"
+            name="Password"
+            required
+            placeholder="رمز عبور خود را وارد کنید"
+          />
+          <label for="RepetitionPassword">تکرار رمز عبور</label>
+          <input
+            type="password"
+            id="RepetitionPassword"
+            name="RepetitionPassword"
+            required
+            placeholder="رمز عبور را تکرار کنید"
+          />
+          <input type="submit" id="Submit" name="Submit" value="ثبت نام" />
+          <div class="div-form__footer">
+            <a href="./rules.html" target="_blank"
+              >مطالعه در مورد قوانین و حریم خصوصی کاربران</a
+            >
+            <label for="Rules">قوانین و حریم خصوصی:</label>
+            <input type="checkbox" id="Rules" name="Rules" value="true" />قوانین
+            بالا را مطالعه کردم و با آن موافقم
+          </div>
+        </form>
+      </div>
+    </fieldset>
+  </body>
+</html>

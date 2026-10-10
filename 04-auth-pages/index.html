@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="این سایت برای ورود به سیستم یا ثبت نام در آن طراحی شده است."
+    />
+    <meta
+      name="keywords"
+      content="ثبت نام، نام کاربری، ورود به سیستم،رمز عبور"
+    />
+    <meta name="author" content="Reza mohammadi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <title>ورود به سیستم</title>
+    <link rel="icon" href="./images/favicon.5.png" sizes="16x16" />
+    <link rel="icon" href="./images/favicon.6.png" sizes="32x32" />
+    <link rel="icon" href="./images/favicon.7.png" sizes="48x48" />
+    <link rel="icon" href="./images/favicon.8.png" sizes="64x64" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <h1>برای ورود به سیستم اطلاعات خود را وارد کنید</h1>
+    <fieldset class="field-set__legend">
+      <legend>اطلاعات ورود به سیستم</legend>
+      <div class="div-form">
+        <form action="./server.html" method="post">
+          <label for="UserName">نام کاربری </label>
+          <input
+            type="text"
+            id="UserName"
+            name="UserName"
+            placeholder="نام کاربری خود را وارد کنید"
+            required
+            maxlength="7"
+            autocomplete="off"
+          />
+          <label for="Email">ایمیل</label>
+          <input
+            type="email"
+            id="Email"
+            name="Email"
+            placeholder="ایمیل خود را وارد کنید"
+            required
+            autocomplete="off"
+          />
+          <label for="Password">رمز عبور </label>
+          <input
+            type="password"
+            id="Password"
+            name="Password"
+            placeholder="رمز عبور را وارد کنید"
+            required
+          />
+          <input
+            type="submit"
+            id="Submit"
+            name="Submit"
+            value="ورود به سیستم"
+          />
+        </form>
+      </div>
+      <div class="div-link">
+        <a href="./recoverypass.html" target="_blank"
+          >رمز عبور را فراموش کردم</a
+        >
+      </div>
+    </fieldset>
+    <div class="div-footer">
+      <p>حساب ندارید؟</p>
+      <a href="./registry.html" target="_blank">ثبت نام جدید</a>
+    </div>
+  </body>
+</html>

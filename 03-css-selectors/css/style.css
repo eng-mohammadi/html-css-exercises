@@ -1,0 +1,165 @@
+/* add font */
+@font-face {
+  font-family: "IRANSansWeb";
+  src:
+    url("../fonts/IRANSansWeb.eot?#") format("eot"),
+    url("../fonts/IRANSansWeb.ttf") format("truetype"),
+    url("../fonts/IRANSansWeb.woff") format("woff"),
+    url("../fonts/IRANSansWeb.woff2") format("woff2");
+}
+
+/* به عنصر body font-family و font-size 16px دهید. */
+/* Give the body element a font-family and font size 16px*/
+body {
+  font-family: "IRANSansWeb";
+  font-size: 16px;
+  background-color: #d5d1e396;
+}
+
+/* به تگ header استایل دلخواه خود را دهید. */
+/* Give the header element a custom style */
+header {
+  background-image: url("../images/image.1.jpg");
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* استایل دلخواه خود را به تگ h1 دهید. */
+/* Give the h1 element a custom style */
+h1 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 5, 5, 0.2);
+  text-align: center;
+  font-style: oblique;
+  color: #bae5c0;
+}
+
+/* به همه تگ های a استایل دلخواه و مناسب دهید. */
+/*  Give the a element a custom style  */
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: red;
+}
+/* به لینک هایی که دیده شدند رنگ دلخواه دهید.  */
+/* Make the <a> element's that have been visited custom color */
+a:hover {
+  border: 3px solid #000;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 100px;
+  text-align: center;
+  color: #fff;
+  background-color: #8e4fc9;
+}
+a:visited {
+  color: #0bee31;
+}
+
+/* تگ های ol,ul padding and marker  نداشته باشد. */
+/* ol, ul elements  padding and marker removed */
+
+ol,
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+/* به عنصر li استایل های text-align center,line-height 2,  background of slategrey را بدهید.  */
+/* Give the li element a text-align center,line-height 2,  background of slategrey*/
+
+li {
+  text-align: center;
+  line-height: 2;
+  background-color: #708090;
+}
+/*  box  استایل های  width 200px,margin 10px auto را بدهید. به هر کلاسی با نام  */
+/* Give everything with the class 'box' a width 200px,margin 10px auto */
+div,
+ul[class*="box"] {
+  width: 200px;
+  margin: 10px auto;
+}
+/* اولین پاراگراف را انتخاب کنید واستایل دلخواه خود را بدهید. */
+/* Selecting the first paragraph and Give custom style */
+p:first-of-type {
+  color: blue;
+  font-weight: bolder;
+  border: 2px dashed #f40146;
+}
+
+/* آخرین پاراگراف را انتخاب کنید واستایل دلخواه خود را بدهید. */
+/* Selecting the last paragraph  and Give custom style */
+p:last-of-type {
+  font-size: 30px;
+  font-weight: lighter;
+  font-style: italic;
+  color: #ee289896;
+}
+
+/*سومین پاراگراف را انتخاب کنید و استایل دلخواه خود را دهید   */
+/* Selects the third paragraph and Give custom style*/
+p:nth-of-type(3) {
+  color: rgb(232, 33, 40);
+  letter-spacing: 3px;
+}
+
+/* چهارمین پاراگراف را انتخاب کنید و استایل دلخواه خود را دهید. */
+/* Selects the Fourth paragraph and Give custom style*/
+p:nth-of-type(4) {
+  word-spacing: 5px;
+  color: #0cb204;
+}
+
+/*  پنجمین پاراگراف را انتخاب کنید و استایل دلخواه خود را دهید.  */
+/* Selects the fifth paragraph and Give custom style*/
+p:nth-child(5) {
+  text-align: justify;
+  font-size: 30px;
+}
+
+/*عناصر li  کلاس one را که اولین فرزند والد خود هستند انتخاب کنید */
+/* استایل دلخواه خود را دهید */
+/* Select the li elements of the one class that are the first child of their parent and Give custom style */
+div[class="one box"] li:nth-child(1) {
+  color: #fff;
+  font-weight: bolder;
+}
+
+/* عناصر فرد li عناصر داخل کلاس two را انتخاب کنید */
+/* استایل دلخواه خود را دهید */
+/* Odd elements li Select elements inside class two and Give custom style*/
+div[class="two box"] li:nth-child(odd) {
+  color: yellow;
+  font-size: 17px;
+}
+
+/* هر عنصر li کلاس three را که دومین عنصر li از والد خود از آخر باشد را انتخاب کنید */
+/* استایل دلخواه خود را دهید */
+/* Select any li element of the three class that is the second last li element of its parent and Give custom style*/
+ul[class="three box"] li:nth-child(7) {
+  color: #e45e84;
+}
+/* عناصر li زوج  کلاس چهارم را که از والد خود از آخر باشد را انتخاب کنید. */
+/* استایل دلخواه خود را دهید */
+/*Select the elements li of the four class pair that is the last from its parent. and Give custom style */
+ul[class="four box"] li:nth-child(7),
+ul[class="four box"] li:nth-child(8) {
+  color: blue;
+  text-transform: uppercase;
+}
+/* or we can use the code below */
+
+/* ul[class="four box"] li:nth-child(n + 7):nth-child(-n + 10) {
+  color: blue;
+  text-transform: uppercase;
+} */
+
+hr {
+  border-width: 5px;
+  border-color: #390404;
+  border-style: solid;
+}
