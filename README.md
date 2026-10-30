@@ -27,5 +27,5 @@ it to show my learning path.
 - Exercise 06 was written in SCSS (`sass/` folder); the compiled CSS is included.
 
 For my more recent work with modern layout and tooling, see
-[React-Projects](https://github.com/eng-mohammadi/React-Projects) and
-[Next.js](https://github.com/eng-mohammadi/Next.js).
+[food-ordering-app](https://github.com/eng-mohammadi/food-ordering-app) and
+[hotel-reservation-react-app](https://github.com/eng-mohammadi/hotel-reservation-react-app).
